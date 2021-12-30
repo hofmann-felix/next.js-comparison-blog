@@ -5,6 +5,7 @@ import {Navigation} from "../../components/navigation";
 import {getPostsData, PostsData} from "../../lib/posts";
 import styled from "styled-components";
 import Link from "next/link";
+import Head from "next/head";
 
 const Grid = styled.div`
   display: grid;
@@ -50,6 +51,9 @@ const Index = ({allPostsData}: {allPostsData: PostsData[]}) => {
 
     return (
         <Layout>
+            <Head>
+                <title>Overview | Next.js Blog</title>
+            </Head>
             <Navigation/>
             <h3>Blog Overview</h3>
             <Grid>

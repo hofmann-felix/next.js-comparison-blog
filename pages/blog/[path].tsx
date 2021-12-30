@@ -1,6 +1,7 @@
 import {Layout} from "../../components/layout";
 import {Navigation} from "../../components/navigation";
 import {getAllPostPaths, getPostData, PostData, PostsData} from "../../lib/posts";
+import Head from "next/head";
 
 export async function getStaticPaths() {
     const paths = getAllPostPaths()
@@ -22,6 +23,9 @@ export async function getStaticProps({ params }: { params: PostsData }) {
 export default function Post({ postData }: {postData: PostData}) {
     return (
         <Layout>
+            <Head>
+                <title>{postData.title} | Next.js Blog</title>
+            </Head>
             <Navigation/>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}/>
         </Layout>
