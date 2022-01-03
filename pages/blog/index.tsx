@@ -52,7 +52,7 @@ const Index = ({allPostsData}: {allPostsData: PostsData[]}) => {
                 {allPostsData.map(post => (
                     <Link key={post.path} href={'/blog/'+post.path} passHref>
                         <GridItem>
-                            {post.imagePath && <Image width={1920} height={1080} src={'/' + post.imagePath}/>}
+                            {post.imagePath && <Image alt="" width={1920} height={1080} src={'/' + post.imagePath}/>}
                             <p>{post.title}</p>
                         </GridItem>
                     </Link>
