@@ -1,5 +1,6 @@
 ---
 title: Second Blogpost
+featuredImage: images/chang-duong-Sj0iMtq_Z4w-unsplash.jpg
 ---
 
 # This is the second Blogpost

@@ -1,5 +1,6 @@
 ---
 title: Third Blogpost
+featuredImage: images/gh-billing-dashboard-cockpit.jpg
 ---
 
 # This is the third Blogpost

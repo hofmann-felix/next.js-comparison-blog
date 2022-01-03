@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 import {Layout} from "../../components/layout";
 import {Navigation} from "../../components/navigation";
@@ -27,14 +26,7 @@ const GridItem = styled.a`
 
   &:hover {
     color: #0070f3;
-  }
-`
-
-const StyledImg = styled(Image)`
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: scale(1.03);
+    text-decoration: underline;
   }
 `
 
@@ -60,7 +52,7 @@ const Index = ({allPostsData}: {allPostsData: PostsData[]}) => {
                 {allPostsData.map(post => (
                     <Link key={post.path} href={'/blog/'+post.path} passHref>
                         <GridItem>
-                            <StyledImg width={1600} height={900} src='/images/how-to-optimize-gatsby-url-hero.jpeg'/>
+                            {post.imagePath && <Image width={1920} height={1080} src={'/' + post.imagePath}/>}
                             <p>{post.title}</p>
                         </GridItem>
                     </Link>

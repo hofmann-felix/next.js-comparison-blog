@@ -1,5 +1,6 @@
 ---
 title: Fifth Blogpost
+featuredImage: images/space.png
 ---
 
 # This is the fifth Blogpost

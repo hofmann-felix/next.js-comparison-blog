@@ -1,5 +1,6 @@
 ---
 title: Fourth Blogpost
+featuredImage: images/IBM_Electronic_Data_Processing_Machine_-_GPN-2000-001881.jpg
 ---
 
 # This is the fourth Blogpost

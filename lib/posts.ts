@@ -8,7 +8,8 @@ const postsDirectory = path.join(process.cwd(), 'posts')
 
 export interface PostsData {
     path: string,
-    title: string
+    title: string,
+    imagePath?: string
 }
 export function getPostsData(): PostsData[] {
     // Get file names under /posts
@@ -27,7 +28,8 @@ export function getPostsData(): PostsData[] {
         // Combine the data with the id
         return {
             path: id,
-            title: matterResult.data.title
+            title: matterResult.data.title,
+            imagePath: matterResult.data.featuredImage
         }
     })
 }
