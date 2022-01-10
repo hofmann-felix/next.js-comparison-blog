@@ -2,22 +2,28 @@ import type {NextPage} from 'next'
 import {Layout} from "../components/layout";
 import {Navigation} from "../components/navigation";
 import Head from "next/head";
+import styled from "styled-components";
+
+const ExternalLink = styled.a`
+  color: #0070f3;
+  text-decoration: none;
+  
+  &:hover{
+    text-decoration: underline;
+  }
+`
 
 const Home: NextPage = () => {
     return (
-            <Layout>
-                <Head>
-                    <title>Next.js Blog</title>
-                </Head>
+        <Layout>
+            <Head>
+                <title>Next.js Blog</title>
+            </Head>
             <Navigation/>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum.
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                kasd
-                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <h1>Gatsby Comparison Blog</h1>
+            <p>This is a simple blog application to show the differences between Gatsby, Next.js and Remix. You can find
+                a detailed description and the other blog applications in <ExternalLink href='#'>this
+                    article</ExternalLink> about the project.</p>
         </Layout>
     );
 }
