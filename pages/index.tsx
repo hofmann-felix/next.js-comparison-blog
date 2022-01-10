@@ -20,7 +20,7 @@ const Home: NextPage = () => {
                 <title>Next.js Blog</title>
             </Head>
             <Navigation/>
-            <h1>Gatsby Comparison Blog</h1>
+            <h1>Next.js Comparison Blog</h1>
             <p>This is a simple blog application to show the differences between Gatsby, Next.js and Remix. You can find
                 a detailed description and the other blog applications in <ExternalLink href='#'>this
                     article</ExternalLink> about the project.</p>
